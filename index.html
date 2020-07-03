@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1-4</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="jQuery - Uncompressed v3.4.1.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+
+    <section id="header">
+
+        <h2>Learning how to work with APIs</h2>
+
+        <select id="countrySelect">
+            <option value='nothingSelected'>Select a country...</option>
+        </select>
+
+    </section>
+
+
+    <section id="countryInfo" class="grid-container">
+
+        <div id="overallInfo" class="grid-item">
+
+            <h3>COUNTRY NAME</h3>
+
+
+            <div class="statisticsContainer">
+                <p class="statistic">Native Name:&nbsp;</p>
+                <p class="statisticInfo">---</p>
+            </div>
+
+            <div class="statisticsContainer">
+                <p class="statistic">Capital:&nbsp;</p>
+                <p class="statisticInfo">---</p>
+            </div>
+
+            <div class="statisticsContainer">
+                <p class="statistic">Region:&nbsp;</p>
+                <p class="statisticInfo">---</p>
+            </div>
+
+            <div class="statisticsContainer">
+                <p class="statistic">Population:&nbsp;</p>
+                <p class="statisticInfo">---</p>
+            </div>
+
+            <div class="statisticsContainer">
+                <p class="statistic">Languages:&nbsp;</p>
+                <p class="statisticInfo">---</p>
+            </div>
+
+            <div class="statisticsContainer">
+                <p class="statistic">Timezones:&nbsp;</p>
+                <p class="statisticInfo">---</p>
+            </div>
+
+        </div>
+
+
+        <div id="callingCode" class="grid-item">
+
+            <h3>CALLING CODE</h3>
+
+            <p>_ _ _</p>
+
+        </div>
+
+
+        <div id="flag" class="grid-item">
+            <img src="" alt="">            
+        </div>
+
+
+        <div id="weather" class="grid-item">
+
+            <h3>CAPITAL WEATHER REPORT</h3>
+
+
+            <div class="weatherContainer">
+                <p class="weather">Wind Speed:&nbsp;</p>
+                <p class="weatherInfo">---</p>
+            </div>
+
+            <div class="weatherContainer">
+                <p class="weather">Temperature:&nbsp;</p>
+                <p class="weatherInfo">---</p>
+            </div>
+
+            <div class="weatherContainer">
+                <p class="weather">Humidity:&nbsp;</p>
+                <p class="weatherInfo">---</p>
+            </div>
+
+            <div class="weatherContainer">
+                <p class="weather">Visibility:&nbsp;</p>
+                <p class="weatherInfo">---</p>
+            </div>
+        </div>
+
+
+        <div id="location" class="grid-item"></div>
+
+    </section>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9y9U_KvsSWcggQPJRukLjVCkd-fucuuU&callback=initMap">
+    </script>
+
+</body>
+
+</html>
